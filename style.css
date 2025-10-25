@@ -137,7 +137,7 @@ body {
 }
 
 .center-box-bot {
-  background: url("/img/nat2.jpg") no-repeat center center;
+  background: url("/img/nature2.jpg") no-repeat center center;
   background-size: cover;
   /*potential affect to alignments */
   text-align: center;
@@ -192,7 +192,7 @@ body {
 
 .title-text{
   font-family: Eca;
-  font-size: 43px;
+  font-size: 42px;
   color: white;
 
   top: 40%;  

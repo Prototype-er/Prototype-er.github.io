@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="fav.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Boy</title>
+
+  </head>
+
+  <body>
+
+    <div class="top-rectangle" id="header">
+      <div class="marquee">
+        <span class="h1">Happy birthday Alvin - The best boyfriend - The best son - The best teacher</span>
+      </div>
+    </div>
+
+    <div class="center-box center-box1">
+      <div class="text-group">
+        <p class="main-text">It has been</p>
+        <div class="timer" id="timer">
+          <div class="time-item">
+            <div class="time-box">
+              <span id="years">0</span>
+            </div>
+            <div class="time-label">Years</div>
+          </div>
+          <div class="time-item">
+            <div class="time-box">
+              <span id="months">0</span>
+            </div>
+            <div class="time-label">Months</div>
+          </div>
+          <div class="time-item">
+            <div class="time-box">
+              <span id="weeks">0</span>
+            </div>
+            <div class="time-label">Weeks</div>
+          </div>
+          <div class="time-item">
+            <div class="time-box">
+              <span id="days">0</span>
+            </div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-item">
+            <div class="time-box">
+              <span id="hours">0</span>
+            </div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-item">
+            <div class="time-box">
+              <span id="minutes">0</span>
+            </div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-item">
+            <div class="time-box">
+              <span id="seconds">0</span>
+            </div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+        <p class="main-text-bot">Since the day you were born</p>
+      </div>
+      <p class="bottom-text" style="color:white">Scroll down</p>
+    </div>
+
+    <div class="center-box center-box2">
+      <div class="split">
+        <img class="imgfit" src="/img/rac.jpg">
+      </div>
+      <div class="split right">
+        <div class="centered">
+          <h2 style="color:black">Who is this lil guy?</h2>
+          <p class="font1">His name is Alvin Nachos, a skilled artist, hardworking teacher and an amazing boyfriend, a person that has always been by my side no matter what I go through. <br> A raccoon and kitten enthusiast. <br> A boy that deserve all the love in the world! And today marks his 20th birthday, everyone wishes all the best to him. ^3^ </p>
+          <p class="font1">(I know this is cheesy but who cares)</p>
+        </div>
+        <img class="imgfit" src="/img/stripe.jpg">
+      </div>
+      <img class="middle-image" src="/img/tag-01.png">
+      <img class="top-right-image" src="/img/stamp.png">
+    </div>
+
+    <div class="box center-box3">
+      <div class="background-text">Let's Meet!</div>
+      <div class="slider-wrapper">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="/img/Letter1-01.png" style="width:100%" onclick="openModal()">
+          </div>
+          <div class="mySlides fade">
+            <img src="/img/Letter2-01.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="/img/Letter3-01.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="/img/Letter4-01.png" style="width:100%">
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content fade1">
+            <p style="color:black">Nah sorry, you can't actually type here</p>
+            <button onclick="closeModal()">Okay...</button>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div class="box center-box4">
+      <img class="pos pos-1" src="/img/frame/1.png">
+      <img class="pos pos-2" src="/img/frame/7.png">
+      <img class="pos pos-3" src="/img/frame/3.png">
+      <img class="pos pos-4" src="/img/frame/5.png">
+      <img class="pos pos-5" src="/img/frame/9.png">
+      <img class="pos pos-6" src="/img/frame/6.png">
+      <img class="pos pos-7" src="/img/frame/8.png">
+      <img class="pos pos-8" src="/img/frame/2.png">
+      <img class="pos pos-9" src="/img/frame/4.png">
+      <img class="pos pos-10" src="/img/frame/10.png">
+      <img class="pos pos-chair" src="chair.png">
+      <div class="trapezoid"></div>
+    </div>
+
+    <div class="box center-box-bot">
+      <p class="title-text">Cảm ơn đã dành thời gian ra xem cái này</p>
+      <div class="bot-rectangle">
+        <div class="split left left-bot ">
+          <div class="centered ">
+            <p>Thank</p>
+          </div>
+        </div>
+        <div class="split right right-bot">
+          <div class="centered">
+            <p>you</p>
+          </div>
+        </div>
+        <div class="split left left-bot">
+          <div class="centered">
+            <p>for</p>
+          </div>
+        </div>
+        <div class="split right right-bot">
+          <div class="centered">
+            <p>reading</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+      <img src="/img/buton-01.png">
+    </button>
+
+  </body>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+</html>

@@ -583,3 +583,8 @@ body {
   height: 150px;
   background: #eeefe7;
 }
+
+#hidden-content,
+#scroll-prompt {
+display: none;
+}

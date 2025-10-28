@@ -1,9 +1,8 @@
 // --- REVEAL LOGIC ---
 window.addEventListener("load", () => {
     // Set the target date
-    const revealDate = new Date("2025-11-1T00:00:00");
+    const revealDate = new Date("2025-11-01T00:00:00");
     const now = new Date();
-
 
     if (now >= revealDate) {
 
@@ -79,13 +78,20 @@ function updateTimer() {
     const weeks = Math.floor(days / 7);
     const remainingDays = days % 7;
 
-    // Hours, minutes, seconds (from today's time)
+    // Hours, minutes, seconds
     const hours = now.getHours();
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
 
-    // Update HTML
-    document.getElementById("years").textContent = years;
+    const yearsElement = document.getElementById("years");
+    yearsElement.textContent = years;
+
+    if (years === 20) {
+        yearsElement.style.color = "#d51616ff";
+    } else {
+        yearsElement.style.color = "black";
+    }
+
     document.getElementById("months").textContent = months;
     document.getElementById("weeks").textContent = weeks;
     document.getElementById("days").textContent = remainingDays;
@@ -124,11 +130,15 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+
+    if (dots.length > 0) { 
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex - 1].className += " active";
     }
+
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
 }
 
 function openModal() {
@@ -138,3 +148,31 @@ function openModal() {
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
+
+/* === NEW IMAGE MODAL LOGIC === */
+
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("fullImage");
+const closeImageBtn = document.querySelector(".image-modal-close");
+
+const galleryImages = document.querySelectorAll(".box.center-box4 .pos:not(.no-popup)");
+
+galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+        imageModal.style.display = "block"; 
+        modalImage.src = img.src; 
+    });
+});
+
+function closeImageModal() {
+    imageModal.style.display = "none";
+}
+
+closeImageBtn.addEventListener("click", closeImageModal);
+
+imageModal.addEventListener("click", (event) => {
+    if (event.target === imageModal) {
+        closeImageModal();
+    }
+});
+/* === END NEW IMAGE MODAL LOGIC === */

@@ -4,7 +4,7 @@
   <head>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="fav.svg">
+    <link rel="icon" type="image/svg+xml" href="/img/fav.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Boy</title>
@@ -94,16 +94,16 @@
       <div class="slider-wrapper">
         <div class="slideshow-container">
           <div class="mySlides fade">
-            <img src="/img/Letter1-01.png" style="width:100%" onclick="openModal()">
+            <img src="/img/Letter/Letter1.png" style="width:100%" onclick="openModal()">
           </div>
           <div class="mySlides fade">
-            <img src="/img/Letter2-01.png" style="width:100%">
+            <img src="/img/Letter/Letter2.png" style="width:100%">
           </div>
           <div class="mySlides fade">
-            <img src="/img/Letter3-01.png" style="width:100%">
+            <img src="/img/Letter/Letter3.png" style="width:100%">
           </div>
           <div class="mySlides fade">
-            <img src="/img/Letter4.png" style="width:100%">
+            <img src="/img/Letter/Letter4.png" style="width:100%">
           </div>
         </div>
         <div id="myModal" class="modal">
@@ -128,7 +128,8 @@
       <img class="pos pos-8" src="/img/Frame/2.png">
       <img class="pos pos-9" src="/img/Frame/4.png">
       <img class="pos pos-10" src="/img/Frame/10.png">
-      <img class="pos pos-chair" src="/img/chair.png">
+      <img class="pos pos-chair no-popup" src="/img/chair.png">
+      <img class="pos pos-sign no-popup" src="/img/sign.png">
       <div class="trapezoid"></div>
     </div>
 
@@ -137,12 +138,12 @@
       <div class="bot-rectangle">
         <div class="split left left-bot ">
           <div class="centered ">
-            <p>Thank</p>
+            <p>This</p>
           </div>
         </div>
         <div class="split right right-bot">
           <div class="centered">
-            <p>you</p>
+            <p>is</p>
           </div>
         </div>
         <div class="split left left-bot">
@@ -152,7 +153,7 @@
         </div>
         <div class="split right right-bot">
           <div class="centered">
-            <p>reading</p>
+            <p>Alvin</p>
           </div>
         </div>
       </div>
@@ -161,6 +162,11 @@
     <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
       <img src="/img/up-button.png">
     </button>
+
+    <div id="imageModal" class="modal image-modal">
+      <span class="image-modal-close">&times;</span>
+    <img class="image-modal-content" id="fullImage">
+    </div>
 
     </div>
 

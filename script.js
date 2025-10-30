@@ -1,7 +1,7 @@
 // --- REVEAL LOGIC ---
 window.addEventListener("load", () => {
     // Set the target date
-    const revealDate = new Date("2025-11-01T00:00:00");
+    const revealDate = new Date("2025-10-30T00:00:00");
     const now = new Date();
 
     if (now >= revealDate) {

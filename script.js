@@ -26,9 +26,25 @@ window.addEventListener("load", () => {
             confetti({
                 particleCount: 500,
                 spread: 70,
+                origin: { x: 1, y: 1 }
+            });
+        }, 300);
+
+        setTimeout(() => {
+            confetti({
+                particleCount: 500,
+                spread: 70,
                 origin: { x: 0.3, y: 1 }
             });
-        }, 1000);
+        }, 500);
+
+        setTimeout(() => {
+            confetti({
+                particleCount: 500,
+                spread: 70,
+                origin: { x: 0, y: 1 }
+            });
+        }, 700);
 
     } else {
         
